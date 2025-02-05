@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">
+        <h4>My Portfolio</h4>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+      <div class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Web Developer & Designer</p>
+        <a href="#contact" class="btn primary">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>HTML & CSS</h3>
+          <div class="progress-bar" data-progress="90%">
+            <div class="progress" style="width: 0"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="progress-bar" data-progress="85%">
+            <div class="progress" style="width: 0"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>PHP</h3>
+          <div class="progress-bar" data-progress="75%">
+            <div class="progress" style="width: 0"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>UI/UX Design</h3>
+          <div class="progress-bar" data-progress="80%">
+            <div class="progress" style="width: 0"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="project1.jpg" alt="Project 1" />
+          <div class="project-info">
+            <h3>Project One</h3>
+            <p>A brief description of project one and its features.</p>
+            <a href="#" class="btn secondary">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="project2.jpg" alt="Project 2" />
+          <div class="project-info">
+            <h3>Project Two</h3>
+            <p>A brief description of project two and its features.</p>
+            <a href="#" class="btn secondary">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="project3.jpg" alt="Project 3" />
+          <div class="project-info">
+            <h3>Project Three</h3>
+            <p>A brief description of project three and its features.</p>
+            <a href="#" class="btn secondary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>
+            Feel free to reach out for collaborations or just a friendly hello!
+          </p>
+          <div class="contact-details">
+            <p>Email: your.email@example.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Location: City, Country</p>
+          </div>
+        </div>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>
